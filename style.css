@@ -1,0 +1,689 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(160, 170, 228, 0.603);
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    color: rgb(64, 64, 64);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+ul {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    cursor: pointer;
+}
+
+.weWork-intro, .allfreedosBenefits {
+    margin: 0 10% 0 10%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    right: initial;
+    text-decoration: none;
+    background-color: rgb(198, 207, 253);
+    box-shadow: 3px 0 10px gray;
+    padding: 0.6rem 6rem;
+    width: 100%;
+}
+
+header>h1>a {
+    font-family: 'Permanent Marker', cursive;
+}
+
+header>ul {
+    display: flex;
+    gap: 1rem;
+    margin: 0 1rem 0 1rem;
+}
+
+header>ul>li>a {
+    border-bottom: 1px solid transparent;
+}
+
+header>ul>li>a:hover {
+    border-bottom: 1px solid;
+    transition: 0.5s all;
+}
+
+header>ul>li>a:active {
+    border-bottom: none;
+    color: rgb(149, 149, 149);
+    transition: 0.001s all;
+}
+
+header>h1>a, header>ul>li>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header>button, .bringEveryone>button, .ourCustomerFriends>button {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    background-color: orangered;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px gray;
+    padding: 0.7rem 2rem;
+    height: fit-content;
+}
+
+header>button:hover, .bringEveryone>button:hover, .ourCustomerFriends>button:hover {
+    background-color: rgb(255, 129, 83);
+    transition: 0.5s all;
+}
+
+header>button:active, .bringEveryone>button:active, .ourCustomerFriends>button:active {
+    background-color: orangered;
+    transition: 0.01s all;
+}
+
+header>i {
+    display: none;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+header>i:hover {
+    background-color: rgba(101, 101, 221, 0.522);
+    transition: 0.3s all;
+}
+
+header>i:active {
+    color: rgb(105, 105, 105);
+    background-color: transparent;
+    transition: 0.001s all;
+}
+
+.weWork-intro {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 2rem
+}
+
+.bringEveryone>h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#imageIntro {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.allfreedosBenefits {
+    display: flex;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.allfreedosBenefitsLeftDiv>h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.allfreedosBenefitsLeftDiv>p {
+    width: 85%;
+}
+
+.allfreedosBenefitsRightDiv>div {
+    display: flex;
+}
+
+.allfreedosBenefitsRightDiv>div:nth-child(2) {
+    margin: 3rem 0 3rem 0;
+}
+
+.allfreedosBenefitsRightDiv>div>p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0.8rem 0 0;
+    background-color: orangered;
+    border-radius: 17px;
+    padding: 0.3rem 1.5rem;
+    height: fit-content;
+}
+
+.allfreedosBenefitsRightDiv>div>div>h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ourCustomerFriends {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.ourCustomerFriends>h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+}
+
+.commentsPhotosFriends {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.commentsPhotosFriends>div:nth-child(2) {
+    margin: 0 2.5rem 0 2.5rem;
+}
+
+.superXandao, .homiSereio, .diguinhoBaleia {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    background-color: rgba(152, 152, 242, 0.512);
+    border-radius: 10px;
+    padding: 2rem 2rem 1.5rem 2rem;
+    width: 25%;
+}
+
+.commentsPhotosFriends>div>img {
+    clip-path: circle(); 
+    height: 4.5rem;
+}
+
+.commentsPhotosFriends>div>h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 1.2rem 0 1.2rem 0;
+}
+
+.commentsPhotosFriends>div>p {
+    margin: 0;
+}
+
+.finalCall {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orangered;
+    margin-top: 4rem;
+    padding: 2rem 8rem;
+    width: 100%;
+}
+
+.finalCall>h1 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 2.3rem;
+    margin: 0;
+    width: 45%;
+}
+
+.finalCall>button {
+    color: orangered;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px black;
+    padding: 0.7rem 2rem;
+    height: fit-content;
+}
+
+.finalCall>button:hover {
+    background-color: rgb(160, 160, 255);
+    transition: 0.5s all;
+}
+
+.finalCall>button:active {
+    background-color: white;
+    transition: 0.01s all;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(17, 17, 38);
+    padding: 2rem 8rem;
+    width: 100%;
+}
+
+.linksFooterLeft>ul>li, .linksFooterRight>ul>li {
+    margin-bottom: 0.5rem;
+}
+
+.linksFooterLeft>ul>li>a, .linksFooterRight>ul>li>a, .linksMobileFooterLeft>ul>li>a, .linksMobileFooterRight>ul>li>a  {
+    color: white;
+    border-bottom: 1px solid transparent;
+}
+
+.linksFooterLeft>ul>li>a:hover, .linksFooterRight>ul>li>a:hover, .linksMobileFooterLeft>ul>li>a:hover, .linksMobileFooterRight>ul>li>a:hover {
+    border-bottom: 1px solid;
+    transition: 0.5s all;
+}
+
+.linksFooterLeft>ul>li>a:active, .linksFooterRight>ul>li>a:active, .linksMobileFooterLeft>ul>li>a:active, .linksMobileFooterRight>ul>li>a:active {
+    border-bottom: none;
+    color: rgb(149, 149, 149);
+    transition: 0.001s all;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.socialMedia>h3, #logoMobileFooter {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.75rem;
+    margin: 0;
+    cursor: pointer;
+}
+
+.socialMedia>h3>a, #logoMobileFooter>a {
+    color: white;
+}
+
+.socialMedia>ul {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.email-copyRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 0.7rem 0;
+}
+
+#divEmailButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#resultEmailVerification, #resultEmailVerificationMobile {
+    color: red;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+}
+
+#resultEmailVerificationMobile {
+    text-align: left;
+    padding: 0;
+    width: 16rem;
+}
+
+.divEmailButton>input {
+    border: none;
+    border-radius: 20px;
+    padding: 1rem 0.5rem;
+    height: 2rem;
+}
+
+.divEmailButton>button, .mobileDivEmailButton>button {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: orangered;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px rgb(64, 64, 64);
+    padding: 0.7rem 2rem;
+    height: fit-content;
+}
+
+.divEmailButton>button:hover, .mobileDivEmailButton>button:hover {
+    background-color: rgb(255, 112, 59);
+    transition: 0.5s all;
+}
+
+.divEmailButton>button:active, .mobileDivEmailButton>button:active {
+    background-color: orangered;
+    transition: 0.01s all;
+}
+
+.email-copyRight>p, .mobileFooter>p {
+    color: rgb(149, 149, 149);
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+}
+
+#forTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    color: white;
+    clip-path: circle();
+    font-size: 1.3rem;
+    background-color: rgb(55, 55, 119);
+    padding: 0.5rem;
+}
+
+#forTop:hover {
+    background-color: rgb(101, 101, 221);
+    transition: 0.3s all;
+}
+
+.thanksForSubscribe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: smokeAparition 0.6s ease-in;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100dvh;
+    width: 100%;
+}
+
+@keyframes smokeAparition {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.thanksForSubscribe>div {
+    background-color: rgb(160, 160, 255);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 20rem;
+}
+
+.thanksForSubscribe>div>h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.3rem;
+}
+
+.thanksForSubscribe>div>button {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: orangered;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px rgb(64, 64, 64);
+    padding: 0.7rem 2rem;
+    height: fit-content;
+}
+
+.thanksForSubscribe>div>button:hover {
+    background-color: rgb(255, 112, 59);
+    transition: 0.5s all;
+}
+
+.thanksForSubscribe>div>button:active {
+    background-color: orangered;
+    transition: 0.01s all;
+}
+
+.mobileFooter {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(17, 17, 38);
+    padding-top: 3rem;
+}
+
+.mobileDivEmailButton>input {
+    border: none;
+    border-radius: 20px;
+    padding: 1rem 0.5rem;
+    height: 2rem;
+}
+
+.linksMobile {
+    display: flex;
+    gap: 3rem;
+}
+
+.linksMobileFooterLeft>ul>li, .linksMobileFooterRight>ul>li {
+    margin-bottom: 0.3rem;
+}
+
+.mobileSocialMedia>ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.invalidEmail {
+    background-color: rgb(255, 162, 162);
+}
+
+.activeChangePersonButton {
+    background-color: orangered;
+}
+
+.navigationMobile {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    animation: fromRight 0.8s ease-in-out;
+    background-color: rgb(120, 120, 191);
+    border-left: 2px solid black;
+    padding: 1rem 3rem 0 1rem;
+    height: 100%;
+}
+
+.navigationMobile>ul>li {
+    margin-bottom: 1rem;
+}
+
+.navigationMobile>ul>li>a {
+    border-bottom: 1px solid transparent;
+}
+
+.navigationMobile>ul>li>a:hover {
+    border-bottom: 1px solid black;
+    transition: 0.5s all;
+}
+
+.navigationMobile>ul>li>a:active {
+    border-bottom: 1px solid transparent;
+    color: rgb(104, 104, 104);
+    transition: 0.001s all;
+}
+
+.navigationMobile>ul>li>a {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#exitNavigationMobile {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+    border: none;
+    clip-path: circle();
+    background-color: transparent;
+    height: fit-content;
+    width: fit-content;
+}
+
+#exitNavigationMobile:hover {
+    background-color: rgb(78, 78, 172);
+    transition: 0.3s all;
+}
+
+#exitNavigationMobile:active {
+    background-color: transparent;
+    color: rgb(103, 103, 103);
+    transition: 0.001s all;
+}
+
+@keyframes fromRight {
+    from {
+        margin-right: -100%;
+    }
+    to {
+        margin-right: 0%;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    header>ul, header>button, footer {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        padding: 0.2rem 6rem;
+    }
+    
+    header>h1>a {
+        font-size: 2rem;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    header>i {
+        display: flex;
+    }
+
+    .weWork-intro {
+        flex-direction: column-reverse; 
+        align-items: center;
+        gap: 0;
+    }
+
+    .bringEveryone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 3rem;
+    }
+    
+    .bringEveryone>h2, .bringEveryone>p {
+        text-align: center;
+        margin: 0.3rem 0.6rem;
+    }
+
+    .bringEveryone>button {
+        margin-top: 1rem;
+    }
+
+    #imageIntro {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .allfreedosBenefits {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 6rem;
+    }
+
+    .allfreedosBenefitsLeftDiv {
+        margin: 0 3rem;
+    }
+
+    .allfreedosBenefitsLeftDiv>h3 {
+        text-align: center;
+    }
+    
+    .allfreedosBenefitsLeftDiv>p {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .allfreedosBenefitsRightDiv>div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .allfreedosBenefitsRightDiv>div>p {
+        margin: 0 0 0.8rem 0;
+        width: fit-content;
+    }
+
+    .superXandao, .homiSereio, .diguinhoBaleia {
+        width: 17rem;
+        height: 21rem;
+    }
+    
+    .superXandao {
+        display: flex;
+    }
+
+    .homiSereio {
+        display: none;
+    }
+
+    .diguinhoBaleia {
+        display: none;
+    }
+
+    .ourCustomerFriends>ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .ourCustomerFriends>ul>li {
+        border: 2px solid orangered;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .finalCall {
+        flex-direction: column;
+    }
+    
+    .finalCall>h1 {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        width: 80%;
+    }
+
+    .mobileFooter {
+        display: flex;
+    }
+}
