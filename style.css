@@ -148,7 +148,7 @@ header>i:active {
 
 .allfreedosBenefitsLeftDiv>h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 700;
     margin: 0;
 }
@@ -192,7 +192,7 @@ header>i:active {
 
 .ourCustomerFriends>h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 .commentsPhotosFriends {
@@ -209,6 +209,7 @@ header>i:active {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    animation: smokeAparition 0.6s ease-in;
     text-align: center;
     background-color: rgba(152, 152, 242, 0.512);
     border-radius: 10px;
@@ -245,7 +246,7 @@ header>i:active {
 .finalCall>h1 {
     font-family: 'Raleway', sans-serif;
     color: white;
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin: 0;
     width: 45%;
 }
@@ -339,7 +340,7 @@ footer {
 #resultEmailVerification, #resultEmailVerificationMobile {
     color: red;
     font-size: 1rem;
-    margin-top: 0.2rem;
+    margin: 0.6rem 0 0 0.8rem;
 }
 
 #resultEmailVerificationMobile {
@@ -348,7 +349,7 @@ footer {
     width: 16rem;
 }
 
-.divEmailButton>input {
+.divEmailButton>input, .mobileDivEmailButton>div>input {
     border: none;
     border-radius: 20px;
     padding: 1rem 0.5rem;
@@ -572,11 +573,11 @@ footer {
 
     header {
         position: relative;
-        padding: 0.2rem 6rem;
+        padding: 0.2rem 2.8rem;
     }
     
     header>h1>a {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: 'Permanent Marker', cursive;
     }
 
@@ -595,6 +596,10 @@ footer {
         flex-direction: column;
         align-items: center;
         margin: 0 3rem;
+    }
+
+    .bringEveryone>h2 {
+        font-size: 2.5rem;
     }
     
     .bringEveryone>h2, .bringEveryone>p {
@@ -625,6 +630,7 @@ footer {
 
     .allfreedosBenefitsLeftDiv>h3 {
         text-align: center;
+        font-size: 1.7rem;
     }
     
     .allfreedosBenefitsLeftDiv>p {
@@ -677,10 +683,17 @@ footer {
     }
     
     .finalCall>h1 {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
         text-align: center;
         margin-bottom: 1.5rem;
         width: 80%;
+    }
+
+    .mobileDivEmailButton {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: fit-content;
     }
 
     .mobileFooter {
