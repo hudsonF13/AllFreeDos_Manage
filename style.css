@@ -132,6 +132,7 @@ header>i:active {
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
     font-weight: 700;
+    margin-top: 0;
 }
 
 #imageIntro {
@@ -615,6 +616,10 @@ footer {
         display: flex;
         justify-content: center;
         width: 100%;
+    }
+
+    #imageIntro>img {
+        width: 90%;
     }
 
     .allfreedosBenefits {
